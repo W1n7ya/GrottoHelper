@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        maven { url "https://maven.minecraftforge.net/" }
+        maven { url "https://files.minecraftforge.net/maven/" }
+        mavenCentral()
+    }
+    dependencies {
+        classpath "net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT"
+    }
+}
+
+apply plugin: "net.minecraftforge.gradle.forge"
+
+version = "1.0"
+group   = "com.yourname"
+archivesBaseName = "BetterGrottoScanner"
+sourceCompatibility = targetCompatibility = 1.7
+
+minecraft {
+    version  = "1.8.9-11.15.1.2318"
+    runDir   = "run"
+    mappings = "stable_20"
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    // add any other libs here
+}
+
+task debugClasspath {
+  doLast {
+    println "→ buildscript classpath:"
+    buildscript.configurations.classpath.each {
+      println "  - ${it.name}"
+    }
+  }
+}

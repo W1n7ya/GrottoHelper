@@ -1,0 +1,12 @@
+[{
+  "modid": "bettergrottoscanner",
+  "name": "Better Grotto Scanner",
+  "description": "Finds Fairy Grottos (pink wool / magenta glass) in Crystal Hollows",
+  "version": "1.0",
+  "authorList": ["W1n7y"],
+  "url": "",
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}]
