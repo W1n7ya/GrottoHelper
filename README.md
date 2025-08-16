@@ -1,1 +1,1 @@
-# GrottoHelper
+Why are you reading this?
